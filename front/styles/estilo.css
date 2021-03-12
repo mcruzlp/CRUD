@@ -1,0 +1,83 @@
+/**************** FUENTES *******************************/
+
+@font-face {
+	src: url("../fonts/HARRYP__.TTF");
+	font-family: titles;
+}
+
+@font-face {
+	src: url("../fonts/4PrivetDriveEsp.ttf");
+	font-family: body;
+}
+
+/******************* BARRA DE NAVEGACIÓN ***********************/
+.navbar {
+	background-color: rgb(68, 4, 77);
+	font-family: titles;
+	font-size: 1.5em;
+}
+.navbar-brand {
+	padding: 5px;
+}
+
+.nav-item {
+	padding: 5px;
+}
+
+.form-inline {
+	position: right;
+}
+
+@media screen and (min-width: 992px) {
+	.navbar-toggler-icon {
+		display: none;
+	}
+}
+
+/******************* LAYOUT BÁSICO *************************/
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: rgb(110, 81, 114);
+	font-family: body;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(68, 4, 77);
+	font-weight: bold;
+}
+
+a:hover {
+	color: orangered;
+}
+
+.btn {
+	background-color: orangered;
+	color: white;
+}
+
+.btn:hover {
+	color: rgb(68, 4, 77);
+}
+
+/********************** INTRO *****************************/
+
+/***************** DICCIONARIO MÁGICO *********************/
+
+/********************** HISTORIA **************************/
+
+/******************** MUNDO MÁGICO ************************/
+
+/********************* ZONA MUGGLE ************************/
+
+/*********************** FOOTER ***************************/
+
+footer {
+	font-family: titles;
+	font-size: 1.25em;
+	color: rgb(68, 4, 77);
+	background-color: rgb(110, 81, 114);
+}
