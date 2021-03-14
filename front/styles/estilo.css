@@ -41,7 +41,7 @@ html {
 }
 
 body {
-	background-color: white;
+	background-color: #136d8e;
 	font-family: body;
 	border-color: #67b7e1;
 }
@@ -67,6 +67,10 @@ a:hover {
 
 /********************** LOGIN *****************************/
 
+#wrapper {
+	background-color: white;
+}
+
 .material-icons {
 	font-family: "Material Icons";
 	font-weight: normal;
@@ -90,6 +94,24 @@ a:hover {
 
 	/* Support for IE. */
 	font-feature-settings: "liga";
+}
+
+/********************** INTRO *****************************/
+.jumbotron {
+	background-image: url("../images/sl11.jpg");
+	border-radius: 0;
+	background-size: cover;
+	background-position: top center;
+	height: 100%;
+	margin: 0%;
+}
+
+#jumbotron-text {
+	background-color: #88ccfb;
+	background-position: bottom;
+	border-radius: 5px;
+	color: white;
+	opacity: 0.8;
 }
 
 /***************** DICCIONARIO MÁGICO *********************/
