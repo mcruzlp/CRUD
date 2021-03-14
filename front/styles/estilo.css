@@ -1,18 +1,19 @@
 /**************** FUENTES *******************************/
 
 @font-face {
-	src: url("../fonts/HARRYP__.TTF");
+	src: url("../fonts/Lato/Lato-Bold.ttf");
 	font-family: titles;
 }
 
 @font-face {
-	src: url("../fonts/4PrivetDriveEsp.ttf");
+	src: url("../fonts/Lato/Lato-Regular.ttf");
 	font-family: body;
 }
 
 /******************* BARRA DE NAVEGACIÓN ***********************/
 .navbar {
-	background-color: rgb(68, 4, 77);
+	background-color: white;
+	color: black;
 	font-family: titles;
 	font-size: 1.5em;
 }
@@ -40,27 +41,28 @@ html {
 }
 
 body {
-	background-color: rgb(110, 81, 114);
+	background-color: white;
 	font-family: body;
+	border-color: #67b7e1;
 }
 
 a {
 	text-decoration: none;
-	color: rgb(68, 4, 77);
+	color: #67b7e1;
 	font-weight: bold;
 }
 
 a:hover {
-	color: orangered;
+	color: #88ccfb;
 }
 
 .btn {
-	background-color: orangered;
+	background-color: #67b7e1;
 	color: white;
 }
 
 .btn:hover {
-	color: rgb(68, 4, 77);
+	color: #88ccfb;
 }
 
 /********************** INTRO *****************************/
@@ -78,6 +80,6 @@ a:hover {
 footer {
 	font-family: titles;
 	font-size: 1.25em;
-	color: rgb(68, 4, 77);
-	background-color: rgb(110, 81, 114);
+	color: #67b7e1;
+	background-color: #88ccfb;
 }
