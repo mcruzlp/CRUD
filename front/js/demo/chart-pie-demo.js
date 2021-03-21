@@ -5,7 +5,7 @@ Chart.defaults.global.defaultFontColor = '#858796';
 // Pie Chart Example
 var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
-  type: 'doughnut',
+  /*type: 'doughnut',
   data: {
     labels: ["Direct", "Referral", "Social"],
     datasets: [{
@@ -33,3 +33,17 @@ var myPieChart = new Chart(ctx, {
     cutoutPercentage: 80,
   },
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {*/
+  timeZone: 'UTC',
+  initialView: 'dayGridMonth',
+  events: 'https://fullcalendar.io/demo-events.json',
+  editable: true,
+  selectable: true
+};
+
+calendar.render();
+};
