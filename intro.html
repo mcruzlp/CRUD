@@ -15,6 +15,9 @@
         rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Style for fullcalendar-->
+    <link href='css/fullcalendar.css' rel='stylesheet' />
 </head>
 
 <body id="page-top">
@@ -45,9 +48,7 @@
             <hr class="sidebar-divider">
 
             <!-- Heading -->
-            <div class="sidebar-heading">
-                Gestión
-            </div>
+            <div class="sidebar-heading">Gestión</div>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
@@ -66,9 +67,7 @@
             <hr class="sidebar-divider d-none d-md-block">
 
             <!-- Heading -->
-            <div class="sidebar-heading">
-                Herramientas
-            </div>
+            <div class="sidebar-heading">Herramientas</div>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
@@ -181,9 +180,7 @@
                             <!-- Dropdown - Alerts -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header">
-                                    Avisos
-                                </h6>
+                                <h6 class="dropdown-header">Avisos</h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="mr-3">
                                         <div class="icon-circle bg-primary">
@@ -233,9 +230,7 @@
                             <!-- Dropdown - Messages -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="messagesDropdown">
-                                <h6 class="dropdown-header">
-                                    Mensajes
-                                </h6>
+                                <h6 class="dropdown-header">Mensajes</h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
                                         <img class="rounded-circle" src="images/undraw_profile_1.svg" alt="">
@@ -317,9 +312,7 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
 
@@ -425,7 +418,7 @@
 
                     <div class="row">
 
-                        <!-- Area Chart -->
+                        <!-- Today Chart -->
                         <div class="col-xl-8 col-lg-7">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
@@ -439,24 +432,26 @@
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                                             aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-header">Opciones:</div>
+                                            <a class="dropdown-item" href="#">Actualizar</a>
+                                            <!--<a class="dropdown-item" href="#">Another action</a>-->
                                             <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <a class="dropdown-item"
+                                                href="https://calendar.google.com/calendar/u/0/r?tab=wc"
+                                                target="_blank">Abrir calendario</a>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
                                     <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
+                                        <canvas id="calendar"></canvas>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Pie Chart -->
+                        <!-- Month Chart -->
                         <div class="col-xl-4 col-lg-5">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
@@ -470,18 +465,20 @@
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                                             aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-header">Opciones:</div>
+                                            <a class="dropdown-item" href="#">Actualizar</a>
+                                            <!--<a class="dropdown-item" href="#">Another action</a>-->
                                             <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <a class="dropdown-item"
+                                                href="https://calendar.google.com/calendar/u/0/r?tab=wc"
+                                                target="_blank">Abrir calendario</a>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
                                     <div class="chart-pie pt-4 pb-2">
-                                        <canvas id="myPieChart"></canvas>
+                                        <canvas id="calendar"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -530,6 +527,8 @@
 
     <!----------------------- JavaScript -------------------------->
 
+    <!-- Fullcalendar JavaScript -->
+    <script src='js/fullcalendar.js'></script>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
