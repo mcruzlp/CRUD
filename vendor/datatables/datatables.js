@@ -31,49 +31,49 @@ $(document).ready(function () {
     ]
   });
   editor = new $.fn.dataTable.Editor({
-    ajax: "../php/staff.php",
+    ajax: "../others/staff.php",
     table: "#dataTable",
     fields: [{
-      label: "First name:",
-      name: "first_name"
+      label: "Nombre:",
+      name: "nombre"
     }, {
-      label: "Last name:",
-      name: "last_name"
+      label: "Apellidos:",
+      name: "apellidos"
     }, {
-      label: "Position:",
-      name: "position"
+      label: "Edad:",
+      name: "edad"
     }, {
-      label: "Office:",
-      name: "office"
+      label: "Teléfono:",
+      name: "telefono"
     }, {
-      label: "Extension:",
-      name: "extn"
+      label: "Email:",
+      name: "email"
     }, {
-      label: "Start date:",
-      name: "start_date",
+      label: "Fecha de alta:",
+      name: "fecha_de_alta",
       type: "datetime"
     }, {
-      label: "Salary:",
-      name: "salary"
+      label: "Tarifa:",
+      name: "tarifa"
     }
     ]
   });
 
   $('#dataTable').DataTable({
     dom: "Bfrtip",
-    ajax: "../php/staff.php",
+    ajax: "../others/staff.php",
     columns: [
       {
         data: null, render: function (data, type, row) {
           // Combine the first and last names into a single table field
-          return data.first_name + ' ' + data.last_name;
+          return data.nombre + ' ' + data.apellidos;
         }
       },
-      { data: "position" },
-      { data: "office" },
-      { data: "extn" },
-      { data: "start_date" },
-      { data: "salary", render: $.fn.dataTable.render.number(',', '.', 0, '$') }
+      { data: "edad" },
+      { data: "telefono" },
+      { data: "email" },
+      { data: "fecha_de_alta" },
+      { data: "tarifa", render: $.fn.dataTable.render.number(',', '.', 0, '$') }
     ],
     select: true,
     buttons: [
