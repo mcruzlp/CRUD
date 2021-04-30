@@ -332,8 +332,7 @@
                     <!-- Page Heading -->
                     <h1 class="h3 mb-2 text-gray-800">Listado de pacientes</h1>
 
-                    <!-- DataTables 
-                    class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generar Informe</a>-->
+                    <!-- DataTables -->
                     <div class="card shadow mb-4">
                         <div id="dataTables_wrapper" class="dataTables_wrapper card-header py-3">
                             <button
@@ -346,9 +345,151 @@
                                 class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm dt-button buttons-selected buttons-remove"
                                 tabindex="0" aria-controls="dataTable" type="button"><span>Borrar</span></button>
                         </div>
+                        <div class="DTED_Lightbox_Background" style="opacity: 1;">
+                            <div></div>
+                        </div>
+                        <div class="DTED_Lightbox_Container">
+                            <div class="DTED_Lightbox_Content_Wrapper">
+                                <div class="DTED_Lightbox_Content" style="height: auto;">
+                                    <div class="DTE DTE_Action_Create">
+                                        <div data-dte-e="head" class="DTE_Header">
+                                            <div class="DTE_Header_Content">Nuevo paciente</div>
+                                        </div>
+                                        <div data-dte-e="processing" class="DTE_Processing_Indicator"><span></span>
+                                        </div>
+                                        <div data-dte-e="body" class="DTE_Body">
+                                            <div data-dte-e="body_content" class="DTE_Body_Content"
+                                                style="max-height: 338px;">
+                                                <div data-dte-e="form_info" class="DTE_Form_Info"
+                                                    style="display: none;"></div>
+                                                <form data-dte-e="form" class="" style="display: block;">
+                                                    <div data-dte-e="form_content" class="DTE_Form_Content">
+                                                        <div
+                                                            class="DTE_Field DTE_Field_Type_text DTE_Field_Name_first_name">
+                                                            <label data-dte-e="label" class="DTE_Label"
+                                                                for="DTE_Field_first_name">Nombre:<div
+                                                                    data-dte-e="msg-label" class="DTE_Label_Info"></div>
+                                                            </label>
+                                                            <div data-dte-e="input" class="DTE_Field_Input">
+                                                                <div data-dte-e="input-control"
+                                                                    class="DTE_Field_InputControl"
+                                                                    style="display: block;"><input
+                                                                        id="DTE_Field_first_name" type="text"></div>
+                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="DTE_Field DTE_Field_Type_text DTE_Field_Name_last_name">
+                                                            <label data-dte-e="label" class="DTE_Label"
+                                                                for="DTE_Field_last_name">Apellidos:<div
+                                                                    data-dte-e="msg-label" class="DTE_Label_Info"></div>
+                                                            </label>
+                                                            <div data-dte-e="input" class="DTE_Field_Input">
+                                                                <div data-dte-e="input-control"
+                                                                    class="DTE_Field_InputControl"
+                                                                    style="display: block;"><input
+                                                                        id="DTE_Field_last_name" type="text"></div>
+                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div
+                                                            class="DTE_Field DTE_Field_Type_text DTE_Field_Name_position">
+                                                            <label data-dte-e="label" class="DTE_Label"
+                                                                for="DTE_Field_position">Edad:<div
+                                                                    data-dte-e="msg-label" class="DTE_Label_Info"></div>
+                                                            </label>
+                                                            <div data-dte-e="input" class="DTE_Field_Input">
+                                                                <div data-dte-e="input-control"
+                                                                    class="DTE_Field_InputControl"
+                                                                    style="display: block;"><input
+                                                                        id="DTE_Field_position" type="text"></div>
+
+                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="DTE_Field DTE_Field_Type_text DTE_Field_Name_office">
+                                                            <label data-dte-e="label" class="DTE_Label"
+                                                                for="DTE_Field_office">Teléfono:<div
+                                                                    data-dte-e="msg-label" class="DTE_Label_Info"></div>
+                                                            </label>
+                                                            <div data-dte-e="input" class="DTE_Field_Input">
+                                                                <div data-dte-e="input-control"
+                                                                    class="DTE_Field_InputControl"
+                                                                    style="display: block;"><input id="DTE_Field_office"
+                                                                        type="text"></div>
+                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="DTE_Field DTE_Field_Type_text DTE_Field_Name_extn">
+                                                            <label data-dte-e="label" class="DTE_Label"
+                                                                for="DTE_Field_extn">Email:<div data-dte-e="msg-label"
+                                                                    class="DTE_Label_Info"></div></label>
+                                                            <div data-dte-e="input" class="DTE_Field_Input">
+                                                                <div data-dte-e="input-control"
+                                                                    class="DTE_Field_InputControl"
+                                                                    style="display: block;"><input id="DTE_Field_extn"
+                                                                        type="text"></div>
+
+                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div
+                                                            class="DTE_Field DTE_Field_Type_datetime DTE_Field_Name_start_date">
+                                                            <label data-dte-e="label" class="DTE_Label"
+                                                                for="DTE_Field_start_date">Fecha de alta:<div
+                                                                    data-dte-e="msg-label" class="DTE_Label_Info"></div>
+                                                            </label>
+                                                            <div data-dte-e="input" class="DTE_Field_Input">
+                                                                <div data-dte-e="input-control"
+                                                                    class="DTE_Field_InputControl"
+                                                                    style="display: block;"><input
+                                                                        id="DTE_Field_start_date" type="text"
+                                                                        autocomplete="off"></div>
+
+                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div
+                                                            class="DTE_Field DTE_Field_Type_text DTE_Field_Name_salary">
+                                                            <label data-dte-e="label" class="DTE_Label"
+                                                                for="DTE_Field_salary">Tarifa:<div
+                                                                    data-dte-e="msg-label" class="DTE_Label_Info"></div>
+                                                            </label>
+                                                            <div data-dte-e="input" class="DTE_Field_Input">
+                                                                <div data-dte-e="input-control"
+                                                                    class="DTE_Field_InputControl"
+                                                                    style="display: block;"><input id="DTE_Field_salary"
+                                                                        type="text"></div>
+
+                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div data-dte-e="foot" class="DTE_Footer">
+                                            <div class="DTE_Footer_Content"></div>
+                                            <div data-dte-e="form_error" class="DTE_Form_Error" style="display: none;">
+                                            </div>
+                                            <div data-dte-e="form_buttons" class="DTE_Form_Buttons"><button class="btn"
+                                                    tabindex="0">Create</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="DTED_Lightbox_Close" title="Close"></div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table display table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <table class="table display dataTable table-bordered" id="dataTable" width="100%"
+                                    cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>Nombre</th>
@@ -932,7 +1073,6 @@
             </div>
         </div>
     </div>
-
 
     <!--DataTables script-->
     <script type="text/javascript" src="DataTables/datatables.js"></script>
