@@ -923,7 +923,7 @@ table.dataTable.dtr-inline.collapsed.table-sm
 	top: 5px;
 }
 
-/**********************************/
+/************** REORDER ********************/
 
 table.dt-rowReorder-float {
 	position: absolute !important;
@@ -948,7 +948,7 @@ table.dataTable td.reorder {
 	cursor: move;
 }
 
-/**********************************/
+/*************** SCROLL *******************/
 
 div.dts {
 	display: block !important;
@@ -993,7 +993,7 @@ div.DTS div.dataTables_scrollBody table {
 	background-color: white;
 }
 
-/**********************************/
+/**************** SELECT ******************/
 
 table.dataTable tbody > tr.selected,
 table.dataTable tbody > tr > .selected {
