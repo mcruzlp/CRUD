@@ -1,12 +1,9 @@
 <?php
- 
 /*
  * Example PHP implementation used for the index.html example
  */
- 
 // DataTables PHP library
 include( "../lib/DataTables.php" );
- 
 // Alias Editor classes so they are easy to use
 use
     DataTables\Editor,
@@ -17,7 +14,6 @@ use
     DataTables\Editor\Upload,
     DataTables\Editor\Validate,
     DataTables\Editor\ValidateOptions;
- 
 // Build our Editor instance and process the data coming from _POST
 Editor::inst( $db, 'datatables_demo' )
     ->fields(
