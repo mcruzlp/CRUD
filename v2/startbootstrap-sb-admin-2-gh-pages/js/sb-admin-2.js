@@ -4,7 +4,7 @@ $(document).ready(function () {
   $('#myTable').DataTable();
 
   editor = new $.fn.dataTable.Editor({
-    ajax: "../staff.php",
+    ajax: "../others/staff.php",
     table: "#myTable",
     fields: [{
       label: "Nombre:",
@@ -33,7 +33,7 @@ $(document).ready(function () {
   });
   var table = $('#myTable').DataTable({
     lengthChange: false,
-    ajax: "../staff.php",
+    ajax: "../others/staff.php",
     columns: [
       {
         data: null, render: function (data, type, row) {
