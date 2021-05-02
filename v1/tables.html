@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!-- enlace a favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Clinica Nilo</title>
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
@@ -48,9 +50,7 @@
             <hr class="sidebar-divider">
 
             <!-- Heading -->
-            <div class="sidebar-heading">
-                Gestión
-            </div>
+            <div class="sidebar-heading">Gestión</div>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
@@ -60,7 +60,7 @@
             </li>
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="html/charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Facturación</span></a>
             </li>
@@ -75,13 +75,13 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
+                    <span>Ajustes</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href=#>Buttons</a>
-                        <a class="collapse-item" href=#>Cards</a>
+                        <a class="collapse-item" href="/html/buttons.html">Buttons</a>
+                        <a class="collapse-item" href="/html/cards.html">Cards</a>
                     </div>
                 </div>
             </li>
@@ -91,16 +91,16 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
-                    <span>Utilities</span>
+                    <span>Utilidades</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="#">Colors</a>
-                        <a class="collapse-item" href="#">Borders</a>
-                        <a class="collapse-item" href="#">Animations</a>
-                        <a class="collapse-item" href="#">Other</a>
+                        <a class="collapse-item" href="/html/utilities-color.html">Colors</a>
+                        <a class="collapse-item" href="/html/utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="/html/utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="/html/utilities-other.html">Other</a>
                     </div>
                 </div>
             </li>
@@ -183,9 +183,7 @@
                             <!-- Dropdown - Alerts -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header">
-                                    Avisos
-                                </h6>
+                                <h6 class="dropdown-header">Avisos</h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="mr-3">
                                         <div class="icon-circle bg-primary">
@@ -332,152 +330,253 @@
                         <div id="dataTables_wrapper" class="dataTables_wrapper card-header py-3">
                             <button
                                 class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm dt-button buttons-create"
-                                tabindex="0" aria-controls="dataTable" type="button"><span>Nuevo</span></button>
+                                data-toggle="modal" data-target="#myModal1" tabindex="0" aria-controls="dataTable"
+                                type="button"><span>Nuevo</span></button>
                             <button
                                 class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm dt-button buttons-selected buttons-edit"
-                                tabindex="0" aria-controls="dataTable" type="button"><span>Editar</span></button>
+                                data-toggle="modal" data-target="#myModal2" tabindex="0" aria-controls="dataTable"
+                                type="button"><span>Editar</span></button>
                             <button
                                 class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm dt-button buttons-selected buttons-remove"
-                                tabindex="0" aria-controls="dataTable" type="button"><span>Borrar</span></button>
-                        </div>
-                        <div class="DTED_Lightbox_Background" style="opacity: 1;">
-                            <div></div>
-                        </div>
-                        <div class="DTED_Lightbox_Container modal">
-                            <div class="DTED_Lightbox_Content_Wrapper">
-                                <div class="DTED_Lightbox_Content" style="height: auto;">
-                                    <div class="DTE DTE_Action_Create">
-                                        <div data-dte-e="head" class="DTE_Header">
-                                            <div class="DTE_Header_Content">Nuevo paciente</div>
-                                        </div>
-                                        <div data-dte-e="processing" class="DTE_Processing_Indicator"><span></span>
-                                        </div>
-                                        <div data-dte-e="body" class="DTE_Body">
-                                            <div data-dte-e="body_content" class="DTE_Body_Content"
-                                                style="max-height: 338px;">
-                                                <div data-dte-e="form_info" class="DTE_Form_Info"
-                                                    style="display: none;"></div>
-                                                <form data-dte-e="form" class="" style="display: block;">
-                                                    <div data-dte-e="form_content" class="DTE_Form_Content">
-                                                        <div
-                                                            class="DTE_Field DTE_Field_Type_text DTE_Field_Name_first_name">
-                                                            <label data-dte-e="label" class="DTE_Label"
-                                                                for="DTE_Field_first_name">Nombre:<div
-                                                                    data-dte-e="msg-label" class="DTE_Label_Info"></div>
-                                                            </label>
-                                                            <div data-dte-e="input" class="DTE_Field_Input">
-                                                                <div data-dte-e="input-control"
-                                                                    class="DTE_Field_InputControl"
-                                                                    style="display: block;"><input
-                                                                        id="DTE_Field_first_name" type="text"></div>
-                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="DTE_Field DTE_Field_Type_text DTE_Field_Name_last_name">
-                                                            <label data-dte-e="label" class="DTE_Label"
-                                                                for="DTE_Field_last_name">Apellidos:<div
-                                                                    data-dte-e="msg-label" class="DTE_Label_Info"></div>
-                                                            </label>
-                                                            <div data-dte-e="input" class="DTE_Field_Input">
-                                                                <div data-dte-e="input-control"
-                                                                    class="DTE_Field_InputControl"
-                                                                    style="display: block;"><input
-                                                                        id="DTE_Field_last_name" type="text"></div>
-                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="DTE_Field DTE_Field_Type_text DTE_Field_Name_position">
-                                                            <label data-dte-e="label" class="DTE_Label"
-                                                                for="DTE_Field_position">Edad:<div
-                                                                    data-dte-e="msg-label" class="DTE_Label_Info"></div>
-                                                            </label>
-                                                            <div data-dte-e="input" class="DTE_Field_Input">
-                                                                <div data-dte-e="input-control"
-                                                                    class="DTE_Field_InputControl"
-                                                                    style="display: block;"><input
-                                                                        id="DTE_Field_position" type="text"></div>
-                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="DTE_Field DTE_Field_Type_text DTE_Field_Name_office">
-                                                            <label data-dte-e="label" class="DTE_Label"
-                                                                for="DTE_Field_office">Teléfono:<div
-                                                                    data-dte-e="msg-label" class="DTE_Label_Info"></div>
-                                                            </label>
-                                                            <div data-dte-e="input" class="DTE_Field_Input">
-                                                                <div data-dte-e="input-control"
-                                                                    class="DTE_Field_InputControl"
-                                                                    style="display: block;"><input id="DTE_Field_office"
-                                                                        type="text"></div>
-                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="DTE_Field DTE_Field_Type_text DTE_Field_Name_extn">
-                                                            <label data-dte-e="label" class="DTE_Label"
-                                                                for="DTE_Field_extn">Email:<div data-dte-e="msg-label"
-                                                                    class="DTE_Label_Info"></div></label>
-                                                            <div data-dte-e="input" class="DTE_Field_Input">
-                                                                <div data-dte-e="input-control"
-                                                                    class="DTE_Field_InputControl"
-                                                                    style="display: block;"><input id="DTE_Field_extn"
-                                                                        type="text"></div>
-                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="DTE_Field DTE_Field_Type_datetime DTE_Field_Name_start_date">
-                                                            <label data-dte-e="label" class="DTE_Label"
-                                                                for="DTE_Field_start_date">Fecha de alta:<div
-                                                                    data-dte-e="msg-label" class="DTE_Label_Info"></div>
-                                                            </label>
-                                                            <div data-dte-e="input" class="DTE_Field_Input">
-                                                                <div data-dte-e="input-control"
-                                                                    class="DTE_Field_InputControl"
-                                                                    style="display: block;"><input
-                                                                        id="DTE_Field_start_date" type="text"
-                                                                        autocomplete="off"></div>
-                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="DTE_Field DTE_Field_Type_text DTE_Field_Name_salary">
-                                                            <label data-dte-e="label" class="DTE_Label"
-                                                                for="DTE_Field_salary">Tarifa:<div
-                                                                    data-dte-e="msg-label" class="DTE_Label_Info"></div>
-                                                            </label>
-                                                            <div data-dte-e="input" class="DTE_Field_Input">
-                                                                <div data-dte-e="input-control"
-                                                                    class="DTE_Field_InputControl"
-                                                                    style="display: block;"><input id="DTE_Field_salary"
-                                                                        type="text"></div>
-                                                                <div data-dte-e="msg-info" class="DTE_Field_Info"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div data-dte-e="foot" class="DTE_Footer">
-                                            <div class="DTE_Footer_Content"></div>
-                                            <div data-dte-e="form_error" class="DTE_Form_Error" style="display: none;">
-                                            </div>
-                                            <div data-dte-e="form_buttons" class="DTE_Form_Buttons"><button
-                                                    class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm dt-button buttons-create"
-                                                    tabindex="0">Añadir</button></div>
-                                        </div>
-                                    </div>
-                                    <div class="DTED_Lightbox_Close" title="Close"></div>
-                                </div>
-                            </div>
+                                data-toggle="modal" data-target="#myModal3" tabindex="0" aria-controls="dataTable"
+                                type="button"><span>Borrar</span></button>
                         </div>
                         <div class="card-body">
+                            <!-- The Modals -->
+                            <div class="modal" id="myModal1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h1 class="modal-title">Nuevo paciente</h1>
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form class="container m-5">
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-3">
+                                                        <label for="inputName">Nombre</label>
+                                                        <input type="text" class="form-control" id="inputName">
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        <label for="inputCity">Apellidos</label>
+                                                        <input type="text" class="form-control" id="inputCity">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="inputEmail4">Email</label>
+                                                        <input type="email" class="form-control" id="inputEmail4">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label for="inputAddress">Dirección</label>
+                                                    <input type="text" class="form-control" id="inputAddress"
+                                                        placeholder="C/Alcalá">
+                                                </div>
+                                                <div class="form-row">
+                                                    <label for="inputAddress2">Teléfono</label>
+                                                    <input type="text" class="form-control" id="inputAddress2"
+                                                        placeholder="26, Bloque 3, 1º A">
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-2">
+                                                        <label for="inputState">Fecha de nacimiento</label>
+                                                        <select id="inputState" class="form-control">
+                                                            <option selected>Elige...</option>
+                                                            <option>1930</option>
+                                                            <option>1940</option>
+                                                            <option>1950</option>
+                                                            <option>1960</option>
+                                                            <option>1970</option>
+                                                            <option>1980</option>
+                                                            <option>1990</option>
+                                                            <option>2000</option>
+                                                            <option>2011</option>
+                                                            <option>2013</option>
+                                                            <option>2014</option>
+                                                            <option>2015</option>
+                                                            <option>2016</option>
+                                                            <option>2017</option>
+                                                            <option>2018</option>
+                                                            <option>2019</option>
+                                                            <option>2020</option>
+                                                            <option>2021</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="inputName">Notas: </label>
+                                                        <input type="text" class="form-control" id="inputName">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-dismiss="modal">Crear</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn" data-toggle="modal"
+                                    data-target="#myModal2">Guardar</button>
+                            </div>
+                            <div class="modal" id="myModal1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h1 class="modal-title">Editar paciente</h1>
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form class="container m-5">
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-3">
+                                                        <label for="inputName">Nombre</label>
+                                                        <input type="text" class="form-control" id="inputName">
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        <label for="inputCity">Apellidos</label>
+                                                        <input type="text" class="form-control" id="inputCity">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="inputEmail4">Email</label>
+                                                        <input type="email" class="form-control" id="inputEmail4">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label for="inputAddress">Dirección</label>
+                                                    <input type="text" class="form-control" id="inputAddress"
+                                                        placeholder="C/Alcalá">
+                                                </div>
+                                                <div class="form-row">
+                                                    <label for="inputAddress2">Teléfono</label>
+                                                    <input type="text" class="form-control" id="inputAddress2"
+                                                        placeholder="26, Bloque 3, 1º A">
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-2">
+                                                        <label for="inputState">Fecha de nacimiento</label>
+                                                        <select id="inputState" class="form-control">
+                                                            <option selected>Elige...</option>
+                                                            <option>1930</option>
+                                                            <option>1940</option>
+                                                            <option>1950</option>
+                                                            <option>1960</option>
+                                                            <option>1970</option>
+                                                            <option>1980</option>
+                                                            <option>1990</option>
+                                                            <option>2000</option>
+                                                            <option>2011</option>
+                                                            <option>2013</option>
+                                                            <option>2014</option>
+                                                            <option>2015</option>
+                                                            <option>2016</option>
+                                                            <option>2017</option>
+                                                            <option>2018</option>
+                                                            <option>2019</option>
+                                                            <option>2020</option>
+                                                            <option>2021</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="inputName">Notas: </label>
+                                                        <input type="text" class="form-control" id="inputName">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-dismiss="modal">Editar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn" data-toggle="modal"
+                                    data-target="#myModal2">Guardar</button>
+                            </div>
+                            <div class="modal" id="myModal3">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h1 class="modal-title">Borrar paciente</h1>
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                        </div>
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form class="container m-5">
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-3">
+                                                        <label for="inputName">Nombre</label>
+                                                        <input type="text" class="form-control" id="inputName">
+                                                    </div>
+                                                    <div class="form-group col-md-3">
+                                                        <label for="inputCity">Apellidos</label>
+                                                        <input type="text" class="form-control" id="inputCity">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="inputEmail4">Email</label>
+                                                        <input type="email" class="form-control" id="inputEmail4">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label for="inputAddress">Dirección</label>
+                                                    <input type="text" class="form-control" id="inputAddress"
+                                                        placeholder="C/Alcalá">
+                                                </div>
+                                                <div class="form-row">
+                                                    <label for="inputAddress2">Teléfono</label>
+                                                    <input type="text" class="form-control" id="inputAddress2"
+                                                        placeholder="26, Bloque 3, 1º A">
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-2">
+                                                        <label for="inputState">Fecha de nacimiento</label>
+                                                        <select id="inputState" class="form-control">
+                                                            <option selected>Elige...</option>
+                                                            <option>1930</option>
+                                                            <option>1940</option>
+                                                            <option>1950</option>
+                                                            <option>1960</option>
+                                                            <option>1970</option>
+                                                            <option>1980</option>
+                                                            <option>1990</option>
+                                                            <option>2000</option>
+                                                            <option>2011</option>
+                                                            <option>2013</option>
+                                                            <option>2014</option>
+                                                            <option>2015</option>
+                                                            <option>2016</option>
+                                                            <option>2017</option>
+                                                            <option>2018</option>
+                                                            <option>2019</option>
+                                                            <option>2020</option>
+                                                            <option>2021</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label for="inputName">Notas: </label>
+                                                        <input type="text" class="form-control" id="inputName">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-dismiss="modal">Borrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn" data-toggle="modal"
+                                    data-target="#myModal3">Borrar</button>
+                            </div>
+                        </div>
+
+                        <div>
                             <div class="table-responsive">
-                                <table
-                                    class="table dts dtr-modal tbody selected compact display dataTable table-bordered"
-                                    id="dataTable" width="100%" cellspacing="0">
+                                <table class="table table-striped table-bordered dataTable" role="grid" id="myTable"
+                                    width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>Nombre</th>
@@ -703,7 +802,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Clinica Nilo 2021</span>
+                        <span>Copyright &copy; Clínica Nilo 2021</span>
                     </div>
                 </div>
             </footer>
@@ -737,9 +836,6 @@
             </div>
         </div>
     </div>
-
-    <!--DataTables script-->
-    <script type="text/javascript" src="DataTables/datatables.js"></script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.js"></script>
