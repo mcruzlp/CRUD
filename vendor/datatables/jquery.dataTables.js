@@ -7198,20 +7198,20 @@
 		 *
 		 * @return {integer} Current page index (zero based)
 		 *//**
-		* Set the current page.
-		*
-		* Note that if you attempt to show a page which does not exist, DataTables will
-		* not throw an error, but rather reset the paging.
-		*
-		* @param {integer|string} action The paging action to take. This can be one of:
-		*  * `integer` - The page index to jump to
-		*  * `string` - An action to take:
-		*    * `first` - Jump to first page.
-		*    * `next` - Jump to the next page
-		*    * `previous` - Jump to previous page
-		*    * `last` - Jump to the last page.
-		* @returns {DataTables.Api} this
-		*/
+	 * Set the current page.
+	 *
+	 * Note that if you attempt to show a page which does not exist, DataTables will
+	 * not throw an error, but rather reset the paging.
+	 *
+	 * @param {integer|string} action The paging action to take. This can be one of:
+	 *  * `integer` - The page index to jump to
+	 *  * `string` - An action to take:
+	 *    * `first` - Jump to first page.
+	 *    * `next` - Jump to the next page
+	 *    * `previous` - Jump to previous page
+	 *    * `last` - Jump to the last page.
+	 * @returns {DataTables.Api} this
+	 */
 		_api_register('page()', function (action) {
 			if (action === undefined) {
 				return this.page.info().page; // not an expensive call
@@ -7273,11 +7273,11 @@
 		 * @return {integer} Current page length. Note `-1` indicates that all records
 		 *   are to be shown.
 		 *//**
-		* Set the current page length.
-		*
-		* @param {integer} Page length to set. Use `-1` to show all records.
-		* @returns {DataTables.Api} this
-		*/
+	 * Set the current page length.
+	 *
+	 * @param {integer} Page length to set. Use `-1` to show all records.
+	 * @returns {DataTables.Api} this
+	 */
 		_api_register('page.len()', function (len) {
 			// Note that we can't call this function 'length()' because `length`
 			// is a Javascript property of functions which defines how many arguments
@@ -7388,12 +7388,12 @@
 		 *
 		 * @return {string} Current Ajax source URL
 		 *//**
-		* Set the Ajax URL. Note that this will set the URL for all tables in the
-		* current context.
-		*
-		* @param {string} url URL to set.
-		* @returns {DataTables.Api} this
-		*/
+	 * Set the Ajax URL. Note that this will set the URL for all tables in the
+	 * current context.
+	 *
+	 * @param {string} url URL to set.
+	 * @returns {DataTables.Api} this
+	 */
 		_api_register('ajax.url()', function (url) {
 			var ctx = this.context;
 
@@ -8682,12 +8682,12 @@
 		 *   direction of the sort (`desc` or `asc`) and, optionally, the third is the
 		 *   index of the sorting order from the `column.sorting` initialisation array.
 		 *//**
-		* Set the ordering for the table.
-		*
-		* @param {integer} order Column index to sort upon.
-		* @param {string} direction Direction of the sort to be applied (`asc` or `desc`)
-		* @returns {DataTables.Api} this
-		*//**
+	 * Set the ordering for the table.
+	 *
+	 * @param {integer} order Column index to sort upon.
+	 * @param {string} direction Direction of the sort to be applied (`asc` or `desc`)
+	 * @returns {DataTables.Api} this
+	 *//**
 		* Set the ordering for the table.
 		*
 		* @param {array} order 1D array of sorting information to be applied.
@@ -11035,7 +11035,7 @@
 					 *      } );
 					 *    } );
 					 */
-					"sSortAscending": ": activate to sort column ascending",
+					"sSortAscending": ": activar para ordenar en orden ascendente",
 
 					/**
 					 * ARIA label that is added to the table headers when the column may be
@@ -11058,7 +11058,7 @@
 					 *      } );
 					 *    } );
 					 */
-					"sSortDescending": ": activate to sort column descending"
+					"sSortDescending": ": activar para ordenar en orden descendente"
 				},
 
 				/**
@@ -11111,7 +11111,7 @@
 					 *      } );
 					 *    } );
 					 */
-					"sLast": "Last",
+					"sLast": "Última",
 
 
 					/**
@@ -11134,7 +11134,7 @@
 					 *      } );
 					 *    } );
 					 */
-					"sNext": "Next",
+					"sNext": "Siguiente",
 
 
 					/**
@@ -11157,7 +11157,7 @@
 					 *      } );
 					 *    } );
 					 */
-					"sPrevious": "Previous"
+					"sPrevious": "Anterior"
 				},
 
 				/**
@@ -11180,7 +11180,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sEmptyTable": "No data available in table",
+				"sEmptyTable": "No hay datos disponibles en la tabla",
 
 
 				/**
@@ -11212,7 +11212,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+				"sInfo": "Mostrando de paciente _START_ al _END_ de _TOTAL_",
 
 
 				/**
@@ -11233,7 +11233,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sInfoEmpty": "Showing 0 to 0 of 0 entries",
+				"sInfoEmpty": "No hay pacientes registrados",
 
 
 				/**
@@ -11255,7 +11255,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sInfoFiltered": "(filtered from _MAX_ total entries)",
+				"sInfoFiltered": "(filtrados de entre _MAX_ pacientes)",
 
 
 				/**
@@ -11373,7 +11373,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sLengthMenu": "Show _MENU_ entries",
+				"sLengthMenu": "Mostrar _MENU_ pacientes",
 
 
 				/**
@@ -11397,7 +11397,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sLoadingRecords": "Loading...",
+				"sLoadingRecords": "Cargando...",
 
 
 				/**
@@ -11418,7 +11418,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sProcessing": "Processing...",
+				"sProcessing": "Procesando...",
 
 
 				/**
@@ -11453,7 +11453,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sSearch": "Search:",
+				"sSearch": "Buscar:",
 
 
 				/**
@@ -11511,7 +11511,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sZeroRecords": "No matching records found"
+				"sZeroRecords": "No se han encontrado coincidencias"
 			},
 
 
