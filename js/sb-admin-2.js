@@ -1,5 +1,76 @@
 (function ($) {
-  "use strict"; // Start of use strict
+  "use strict"; //Start of use strict
+
+  $(document).ready(function () {
+    $('#pacientes').DataTable();
+  });
+
+  $(document).ready(function () {
+    editor = new $.fn.dataTable.Editor({
+      ajax: "../vendor/datatables/ajax.js",
+      table: "#pacientes",
+      fields: [{
+        label: "First name:",
+        name: "first_name"
+      }, {
+        label: "Last name:",
+        name: "last_name"
+      }, {
+        label: "Position:",
+        name: "position"
+      }, {
+        label: "Office:",
+        name: "office"
+      }, {
+        label: "Extension:",
+        name: "extn"
+      }, {
+        label: "Start date:",
+        name: "start_date",
+        type: "datetime"
+      }, {
+        label: "Salary:",
+        name: "salary"
+      }
+      ]
+    });
+
+    // Activate the bubble editor on click of a table cell
+    $('#pacientes').on('click', 'tbody td:not(:first-child)', function (e) {
+      editor.bubble(this);
+    });
+
+    $('#pacientes').DataTable({
+      dom: "Bfrtip",
+      scrollY: 300,
+      paging: false,
+      ajax: "../vendor/datatables/ajax.js",
+      columns: [
+        {
+          data: null,
+          defaultContent: '',
+          className: 'select-checkbox',
+          orderable: false
+        },
+        { data: "first_name" },
+        { data: "last_name" },
+        { data: "position" },
+        { data: "office" },
+        { data: "start_date" },
+        { data: "salary", render: $.fn.dataTable.render.number(',', '.', 0, '$') }
+      ],
+      order: [1, 'asc'],
+      select: {
+        style: 'os',
+        selector: 'td:first-child'
+      },
+      buttons: [
+        { extend: "create", editor: editor },
+        { extend: "edit", editor: editor },
+        { extend: "remove", editor: editor }
+      ]
+    });
+  });
 
   // Toggle the side navigation
   $("#sidebarToggle, #sidebarToggleTop").on('click', function (e) {
@@ -51,68 +122,6 @@
       scrollTop: ($($anchor.attr('href')).offset().top)
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
-  });
+  });/**/
 
 })(jQuery); // End of use strict
-
-var editor; // use a global for the submit and return data rendering in the examples
-
-$(document).ready(function () {
-  $('#myTable').DataTable();
-
-  editor = new $.fn.dataTable.Editor({
-    ajax: "../others/staff.php",
-    table: "#myTable",
-    fields: [{
-      label: "Nombre:",
-      name: "first_name"
-    }, {
-      label: "Apellidos:",
-      name: "last_name"
-    }, {
-      label: "Edad:",
-      name: "position"
-    }, {
-      label: "Teléfono:",
-      name: "office"
-    }, {
-      label: "Email:",
-      name: "extn"
-    }, {
-      label: "Fecha de alta:",
-      name: "start_date",
-      type: "datetime"
-    }, {
-      label: "Tarifa:",
-      name: "salary"
-    }
-    ]
-  });
-  var table = $('#myTable').DataTable({
-    lengthChange: false,
-    ajax: "../others/staff.php",
-    columns: [
-      {
-        data: null, render: function (data, type, row) {
-          // Combine the first and last names into a single table field
-          return data.first_name + ' ' + data.last_name;
-        }
-      },
-      { data: "position" },
-      { data: "office" },
-      { data: "extn" },
-      { data: "start_date" },
-      { data: "salary", render: $.fn.dataTable.render.number(',', '.', 0, '$') }
-    ],
-    select: true
-  });
-
-  new $.fn.dataTable.Buttons(table, [
-    { extend: "create", editor: editor },
-    { extend: "edit", editor: editor },
-    { extend: "remove", editor: editor }
-  ]);
-
-  table.buttons().container().appendTo($('.col-sm-6:eq(0)', table.table().container()));
-
-});
