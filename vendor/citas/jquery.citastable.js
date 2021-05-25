@@ -8688,12 +8688,12 @@
 * @param {string} direction Direction of the sort to be applied (`asc` or `desc`)
 * @returns {DataTables.Api} this
 *//**
-									* Set the ordering for the table.
-									*
-									* @param {array} order 1D array of sorting information to be applied.
-									* @param {array} [...] Optional additional sorting conditions
-									* @returns {DataTables.Api} this
-									*//**
+											* Set the ordering for the table.
+											*
+											* @param {array} order 1D array of sorting information to be applied.
+											* @param {array} [...] Optional additional sorting conditions
+											* @returns {DataTables.Api} this
+											*//**
 * Set the ordering for the table.
 *
 * @param {array} order 2D array of sorting information to be applied.
@@ -11180,7 +11180,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sEmptyTable": "No hay datos disponibles en la tabla",
+				"sEmptyTable": "No hay citas disponibles en la tabla",
 
 
 				/**
@@ -11212,7 +11212,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sInfo": "Mostrando de paciente _START_ al _END_ de _TOTAL_",
+				"sInfo": "Mostrando de la cita _START_ a la _END_ de _TOTAL_",
 
 
 				/**
@@ -11233,7 +11233,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sInfoEmpty": "No hay pacientes registrados",
+				"sInfoEmpty": "No hay citas registradas",
 
 
 				/**
@@ -11255,7 +11255,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sInfoFiltered": "(filtrados de entre _MAX_ pacientes)",
+				"sInfoFiltered": "(filtradas de entre _MAX_ citas)",
 
 
 				/**
@@ -11373,7 +11373,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sLengthMenu": "Mostrar _MENU_ pacientes",
+				"sLengthMenu": "Mostrar _MENU_ citas",
 
 
 				/**

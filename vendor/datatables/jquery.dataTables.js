@@ -8688,12 +8688,12 @@
 * @param {string} direction Direction of the sort to be applied (`asc` or `desc`)
 * @returns {DataTables.Api} this
 *//**
-									* Set the ordering for the table.
-									*
-									* @param {array} order 1D array of sorting information to be applied.
-									* @param {array} [...] Optional additional sorting conditions
-									* @returns {DataTables.Api} this
-									*//**
+											* Set the ordering for the table.
+											*
+											* @param {array} order 1D array of sorting information to be applied.
+											* @param {array} [...] Optional additional sorting conditions
+											* @returns {DataTables.Api} this
+											*//**
 * Set the ordering for the table.
 *
 * @param {array} order 2D array of sorting information to be applied.
